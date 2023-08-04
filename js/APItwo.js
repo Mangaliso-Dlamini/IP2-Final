@@ -16,7 +16,7 @@ $(document).ready(function(){
 //Load the selects
 $(document).ready(function(){
   const country_select = document.getElementById("country");
-  country_select.addEventListener("click", (event) =>{
+  country_select.addEventListener("change", (event) =>{
     localStorage.clear();
     document.getElementById("view").disabled = true;
     showLoadingSpinner();
